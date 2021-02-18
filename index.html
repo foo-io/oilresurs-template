@@ -5,8 +5,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="./assets/styles.compact.css">
+
 </head>
 <body>
+
+    <div id="app">
+
+        <div class="page">
+
+            <!-- СЕМАНТИКУ СОБЛЮДАЕМ :) -->
+
+            <header class="header">
+                <a href="#" class="header__logo">
+                    <img src="./assets/img/logo.svg" alt="Oilresurs" class="header__logo-img">
+                </a>
+            </header>
+            <!-- /.header -->
+
+            <main class="main">
+
+                <div class="content">
+                    <h1 class="content__title">
+                        Оптовые закупки качественных&nbsp;нефтепродуктов по лучшим ценам
+                    </h1>
+                    <div class="content__blocks">
+                        <div class="block">
+                            <div class="block__image">
+                                <img src="./assets/img/icon-1.svg" alt="" class="block__image-icon">
+                            </div>
+                            <div class="block__content">
+                                <div class="block__content-title">
+                                    Удобное отслеживание динамики цен
+                                </div>
+                                <div class="block__content-description">
+                                    Краткое описание преимущества в пару строк
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__image">
+                                <img src="./assets/img/icon-2.svg" alt="" class="block__image-icon">
+                            </div>
+                            <div class="block__content">
+                                <div class="block__content-title">
+                                    Быстрое оформление
+                                </div>
+                                <div class="block__content-description">
+                                    Краткое описание преимущества в пару строк
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__image">
+                                <img src="./assets/img/icon-3.svg" alt="" class="block__image-icon">
+                            </div>
+                            <div class="block__content">
+                                <div class="block__content-title">
+                                    Широкий выбор
+                                </div>
+                                <div class="block__content-description">
+                                    Краткое описание преимущества в пару строк
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.content -->
+
+                <div class="form">
+                    <div class="form__tabs">
+                        <div class="tabs">
+                            <button class="tabs__item">Вход</button>
+                            <button class="tabs__item tabs__item-active">Регистрация</button>
+                        </div>
+                    </div>
+                    <div class="form__content">
+                        <form class="registration">
+                            <div class="grid">
+                                <div class="grid__row">
+                                    <div class="grid__col">
+                                        <label for="name" class="label">
+                                            <div class="label__title">
+                                                <span class="label__title-text">ФИО</span>
+                                                <span class="label__title-tooltip">?</span>
+                                            </div>
+                                            <input type="text" id="name" class="label__input" placeholder="Константинопольский Константин Конст...">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="grid__row">
+                                    <div class="grid__col grid__col-50">
+                                        <label for="phone" class="label">
+                                            <div class="label__title">
+                                                <span class="label__title-text">Телефон</span>
+                                                <span class="label__title-tooltip">?</span>
+                                            </div>
+                                            <input type="tel" id="phone" class="label__input" placeholder="+7 (900) 000-00-00">
+                                        </label>
+                                    </div>
+                                    <div class="grid__col grid__col-50">
+                                        <label for="email" class="label">
+                                            <div class="label__title">
+                                                <span class="label__title-text">E-mail</span>
+                                                <span class="label__title-tooltip">?</span>
+                                            </div>
+                                            <input type="email" id="email" class="label__input" placeholder="example@mail.com">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="grid__row">
+                                    <div class="grid__col">
+                                        <label for="password" class="label">
+                                            <div class="label__title">
+                                                <span class="label__title-text">Пароль</span>
+                                                <span class="label__title-tooltip">?</span>
+                                            </div>
+                                            <input type="password" id="password" class="label__input" placeholder="—">
+                                            <button class="label__toggle">
+                                                <img src="./assets/img/icon-hide.svg" alt="Hide" class="label__toggle-icon">
+                                                <img src="./assets/img/icon-show.svg" alt="Show" class="label__toggle-icon">
+                                                <!-- add active icon for v-if/v-else -->
+                                            </button>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <button class="button">
+                                <span class="button__text">Зарегистироваться</span>
+                            </button>
+                            <div class="accept">
+                                Создавая аккаунт, вы соглашаетесь с <a href="#" class="accept__link">правилами платформы</a> и&nbsp;<a href="#" class="accept__link">обработкой персональных данных</a>
+                            </div>
+                        </form>
+
+                        <div class="others">
+                            <div class="others__title">Другие способы регистрации</div>
+                            <div class="others__items">
+                                <div class="others__item">
+                                    <button class="others__item-button others__item-default">
+                                        Войти по Сбербанк ID
+                                    </button>
+                                </div>
+                                <div class="others__item">
+                                    <button class="others__item-button others__item-default">
+                                        По номеру телефона
+                                    </button>
+                                </div>
+                                <div class="others__item">
+                                    <button class="others__item-button others__item-gmail">
+                                        <img src="./assets/img/icon-gmail.svg" alt="Gmail" class="others__item-icon">
+                                        Gmail
+                                    </button>
+                                </div>
+                                <div class="others__item">
+                                    <button class="others__item-button others__item-facebook">
+                                        <img src="./assets/img/icon-facebook.svg" alt="Facebook" class="others__item-icon">
+                                        Facebook
+                                    </button>
+                                </div>
+                                <div class="others__item">
+                                    <button class="others__item-button others__item-vk">
+                                        <img src="./assets/img/icon-vk.svg" alt="Вконтакте" class="others__item-icon">
+                                        Вконтакте
+                                    </button>
+                                </div>
+                                <div class="others__item">
+                                    <button class="others__item-button others__item-icloud">
+                                        <img src="./assets/img/icon-icloud.svg" alt="Icloud" class="others__item-icon">
+                                        Icloud
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.others -->
+                    </div>
+                    <!-- /.form__content -->
+                </div>
+                <!-- /.form -->
+            </main>
+            <!-- /.main -->
+
+            <footer class="footer">
+
+                <div class="footer__copyright">
+                    © 2020 Trader-Oil. All rights reserved
+                </div>
+
+                <div class="footer__links">
+                    <a href="#" class="footer__links-item">Правила использования</a>
+                    <a href="#" class="footer__links-item">Политика конфеденциальности</a>
+                </div>
+
+                <div class="footer__developers">
+                    <a href="#" class="footer__developers-link">Сделано в Affetta</a>
+                </div>
+
+            </footer>
+            <!-- /.footer -->
+        </div>
+        <!-- /.page -->
+
+    </div>
+    <!-- /#app -->
 
 </body>
 </html>
